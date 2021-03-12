@@ -1,0 +1,76 @@
+.lineup {
+    background-color: $colorTerciario;
+    padding-bottom: $separacion;
+
+    h3, h4 {
+        color: $blanco;
+        text-align: center;
+        padding: $separacion / 2 0;
+        text-transform: uppercase;
+    }
+
+    h4 {
+        font-weight: $light;
+        font-size: $normal2Size;
+    }
+}
+
+.concert__day {
+    @include m {
+        @include grid(2, 2rem)
+    }
+}
+.bg-yellow {
+    background-color: $colorSecundario;
+}
+
+.bg-green {
+    background-color: $colorgreen;
+}
+
+.concert__info {
+    padding: $separacion / 2;
+    text-align: center;
+    border-radius: .5rem;
+
+    .concert__img {
+        width: 15rem;
+        padding: $separacion / 2;
+    }
+
+    li {
+        padding: $separacion / 2;
+        text-align: start;
+        font-weight: $bold;
+    
+       /*  &:nth-child(odd) {
+            background-color: rgba(0,0,0,.3);
+        } */
+
+        span {
+            font-weight: $normal;
+        }
+    }
+}
+
+.bg-green.concert__info ul li:nth-child(odd) {
+    background-color: darken($colorgreen, 10);
+}
+
+.bg-yellow.concert__info ul li:nth-child(odd) {
+    background-color: darken($colorSecundario, 10);
+}
+
+.concert__title {
+    font-size: $normal2Size;
+    font-weight: $light;
+}
+
+.concert__info:first-child {
+    margin-bottom: $separacion / 2;
+    @include m {
+        margin-bottom: auto;
+    }
+}
+
+

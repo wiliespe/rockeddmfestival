@@ -1,0 +1,69 @@
+.tickets {
+    padding: $separacion / 2 0 $separacion 0 ;
+    background-color: $colorPrimario;
+    
+    h3 {
+        text-align: center;
+        text-transform: uppercase;
+        color: $blanco;
+    }
+}
+
+.ticket__content {
+    margin-top: $separacion;
+    @include m {
+        @include grid(2, $separacion / 2);
+    }
+}
+
+.plan {
+    p {
+        color: $blanco;
+        font-size: $normal3Size;
+        text-align: center;
+    }
+
+    &:last-of-type {
+        margin-top: $separacion / 2;
+    }
+
+    @include m {
+        &:last-of-type {
+            margin-top: 0;
+        }
+    }
+}
+
+.pase {
+    width: 100%;
+   
+}
+
+thead {
+    th {
+        padding: 1rem;
+        background-color: $colorTerciario;
+        text-transform: uppercase;
+        color: $blanco;
+    }
+}
+
+tbody {
+    td {
+        background-color: $blanco;
+        padding: 1rem;
+        border-bottom: 1px solid #e1e1e1;
+    }
+
+}
+
+tfoot {
+    td {
+        background-color: rebeccapurple;
+        padding: 1rem;
+        text-align: center;
+        font-size: $mediumSize;
+        color: $blanco;
+    }
+}
+

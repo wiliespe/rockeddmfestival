@@ -1,0 +1,31 @@
+.about {
+    padding: $separacion 0;
+
+    @include m {
+            @include grid(2, 2rem)
+        }
+}
+
+.about__text {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    h2 {
+        font-size: $mediumSize;
+        margin-bottom: $separacion / 2;
+    }
+
+    .about__fecha {
+        color: $colorTerciario;
+        font-weight: $bold;
+        margin-bottom: $separacion / 2;
+    }
+
+    .about__info{
+        line-height: 1.5;
+    }
+
+}
+
+

@@ -1,0 +1,153 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="../css/styles.css")
+        title Rock & EDM Festival 
+    body 
+       header.header 
+            .container.header__content
+                .header__logo 
+                    h1.logo__text Rock & EDM Festival 
+                nav.header__nav
+                    a(href="#lineup").nav__item Line Up   
+                    a(href="#galery").nav__item Galería   
+                    a(href="#tickets").nav__item Boletos  
+       .hero
+            .overlay 
+                .container.hero__content 
+                    h2 Rock & EDM Festival 
+                        span Julio 2021, Donostia, España. 
+            .hero__video 
+                video(controls autoplay muted loop)
+                    source(src="assets/video/concierto.mp4" type="video/mp4") 
+                    source(src="assets/video/concierto.ogg" type="video/ogg") 
+                    source(src="assets/video/concierto.webn" type="video/webn")
+       .about.container  
+            .about__img 
+                img(src="assets/img/imagen_vocalista.jpg", alt="Vocalista del grupo")
+            .about__text 
+                h2 Rock &  EDM Festival.
+                p.about__fecha Julio 2021. Donostia, España. 
+                p.about__info Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi dicta doloribus corrupti deserunt ratione eum magnam vero laboriosam quidem sunt!
+    main#lineup.lineup 
+        h3 Line Up 
+        h4 Viernes 
+        .concert__day.container 
+            .concert__info.bg-yellow 
+                p.concert__title Escenario Rock 
+                img.concert__img(src="/assets/img/icono_rock.png", alt="icono de guitarra")
+                ul
+                    li 24:00 | 
+                        span Metallica 
+                    li 22:00 | 
+                        span Perl Jam 
+                    li 20:00 | 
+                        span KoRn 
+                    li 19:00 |
+                        span  Muse 
+                    li 18:00 | 
+                        span Dreaking Benjamin 
+                    li 18:00 | 
+                        span 30 Seconds to Mars
+            .concert__info.bg-green 
+                p.concert__title Escenario EDM 
+                img.concert__img(src="assets/img/icono_edm.png", alt="icono de auriculares")
+                ul
+                    li 24:00 | 
+                        span DeadmauS 
+                    li 22:00 | 
+                        span Tiesto  
+                    li 20:00 | 
+                        span Hardwell  
+                    li 19:00 |
+                        span  Dash Berlin 
+                    li 18:00 | 
+                        span Fedde Legrand  
+                    li 18:00 | 
+                        span Audien 
+        h4 Sábado 
+        .concert__day.container 
+            .concert__info.bg-green
+                p.concert__title Escenario Rock
+                img.concert__img(src="assets/img/icono_rock.png", alt="icono de auriculares") 
+                ul
+                    li 24:00 | 
+                        span Metallica 
+                    li 22:00 | 
+                        span Perl Jam 
+                    li 20:00 | 
+                        span KoRn 
+                    li 19:00 |
+                        span  Muse 
+                    li 18:00 | 
+                        span Dreaking Benjamin 
+                    li 18:00 | 
+                        span 30 Seconds to Mars
+            .concert__info.bg-yellow 
+                p.concert__title Escenario EDM 
+                img.concert__img(src="assets/img/icono_edm.png", alt="icono de auriculares")
+                ul
+                    li 24:00 | 
+                        span DeadmauS 
+                    li 22:00 | 
+                        span Tiesto  
+                    li 20:00 | 
+                        span Hardwell  
+                    li 19:00 |
+                        span  Dash Berlin 
+                    li 18:00 | 
+                        span Fedde Legrand  
+                    li 18:00 | 
+                        span Audien
+    section#galery.galery 
+        h3 Galería
+        .galery__cards.container 
+            ul.galery__card 
+    section#tickets.tickets 
+        h3 Boletos 
+        .ticket__content.container 
+            .plan 
+                p Pase 1 Día
+                table.pase 
+                    thead 
+                        tr 
+                            th Incluye 
+                    tbody 
+                        tr 
+                            td Acceso a todos los escenarios.
+                        tr 
+                            td Comida y Bebida.
+                    tfoot 
+                        tr 
+                            td $ 100
+            .plan 
+                p Pase 2 Días
+                table.pase 
+                    thead 
+                        tr 
+                            th Incluye 
+                    tbody 
+                        tr 
+                            td Acceso a todos los escenarios.
+                        tr 
+                            td Comida y Bebida.
+                        tr 
+                            td Camisa del evento.
+                        tr 
+                            td Acceso VIP.
+                    tfoot 
+                        tr 
+                            td $ 100
+    footer 
+        .footer 
+            p Hecho con &#9829 por Codewep. | Rock & EDM Todos los derechos reservados.
+          
+               
+
+    script(src="js/scripts-min.js")              
+
+            
+
